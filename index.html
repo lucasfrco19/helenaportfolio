@@ -7,8 +7,8 @@
   <title>Helena Steiger | SVG Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=desktop-sync-2">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=note-lines-1">
 </head>
 <body>
   <main class="portfolio" aria-label="Portfólio Helena Steiger em SVG">
@@ -140,6 +140,7 @@
         <title id="title-05">Universo de conteúdo</title>
         <defs>
           <clipPath id="conteudo-phones"><rect x="129" y="185" width="1121" height="408" rx="26"/></clipPath>
+          <clipPath id="conteudo-card-4"><rect x="993" y="185" width="257" height="408" rx="26"/></clipPath>
         </defs>
         <rect id="conteudo-fundo" width="1383" height="773" fill="#ead5ad"/>
         <g id="conteudo-titulo">
@@ -148,6 +149,8 @@
         </g>
         <g id="conteudo-celulares">
           <image href="assets/screens/screen-05.png" x="0" y="0" width="1383" height="773" clip-path="url(#conteudo-phones)"/>
+          <rect x="993" y="185" width="257" height="408" rx="26" fill="#000"/>
+          <image href="assets/images/mobile-content-instagram.jpg" x="993" y="185" width="257" height="408" preserveAspectRatio="xMidYMid slice" clip-path="url(#conteudo-card-4)"/>
         </g>
         <text id="conteudo-legenda" x="691" y="622" text-anchor="middle" class="sans sans-sm" fill="#5a4a3f">Conteúdos de BELEZA, MODA, DESENVOLVIMENTO PESSOAL, VLOGS &amp; LIFESTYLE</text>
       </svg>
@@ -160,6 +163,8 @@
           <clipPath id="video-card-1"><rect x="95" y="230" width="373" height="359" rx="28"/></clipPath>
           <clipPath id="video-card-2"><rect x="504" y="230" width="374" height="359" rx="28"/></clipPath>
           <clipPath id="video-card-3"><rect x="914" y="230" width="373" height="359" rx="28"/></clipPath>
+          <clipPath id="video-card-img-1"><rect x="116" y="250" width="330" height="202" rx="14"/></clipPath>
+          <clipPath id="video-card-img-3"><rect x="936" y="250" width="329" height="202" rx="14"/></clipPath>
         </defs>
         <rect id="videos-fundo" width="1382" height="773" fill="#ead5ad"/>
         <g id="videos-titulo">
@@ -171,6 +176,8 @@
           <image href="assets/screens/screen-06.png" x="0" y="0" width="1382" height="773" clip-path="url(#video-card-1)"/>
           <image href="assets/screens/screen-06.png" x="0" y="0" width="1382" height="773" clip-path="url(#video-card-2)"/>
           <image href="assets/screens/screen-06.png" x="0" y="0" width="1382" height="773" clip-path="url(#video-card-3)"/>
+          <image href="assets/images/service-publicidades.jpg" x="116" y="250" width="330" height="202" preserveAspectRatio="xMidYMid slice" clip-path="url(#video-card-img-1)"/>
+          <image href="assets/images/service-1.jpg" x="936" y="250" width="329" height="202" preserveAspectRatio="xMidYMid slice" clip-path="url(#video-card-img-3)"/>
         </g>
         <a href="#portfolio-videos" aria-label="Acesse meu portf&#243;lio de v&#237;deos">
           <g id="cta-portfolio-videos">
@@ -187,7 +194,7 @@
         <rect id="servicos-fundo" width="1382" height="768" fill="#856348"/>
         <text x="691" y="66" text-anchor="middle" class="sans sans-xs" fill="#aa9987">SERVIÇOS</text>
         <text x="691" y="116" text-anchor="middle" class="display display-md" fill="#f4eee7">O que posso criar para sua marca.</text>
-        <g id="servicos-cards" class="service-cards">
+        <g id="servicos-cards" class="service-cards" transform="translate(97 55) scale(.86)">
           <rect x="71" y="178" width="229" height="128" rx="10"/><text x="186" y="247" text-anchor="middle">UGC Premium</text>
           <rect x="323" y="178" width="229" height="128" rx="10"/><text x="438" y="247" text-anchor="middle">Reels Patrocinados</text>
           <rect x="575" y="178" width="229" height="128" rx="10"/><text x="690" y="247" text-anchor="middle">Stories Patrocinados</text>
@@ -214,7 +221,7 @@
         <text x="687" y="80" text-anchor="middle" class="sans sans-xs" fill="#aa9987">DIFERENCIAIS</text>
         <text x="687" y="137" text-anchor="middle" class="display display-md" fill="#2f221c">Por que as marcas trabalham</text>
         <text x="687" y="178" text-anchor="middle" class="display display-md" fill="#2f221c">comigo.</text>
-        <g id="diferenciais-cards" class="diff-cards">
+        <g id="diferenciais-cards" class="diff-cards" transform="translate(96 47) scale(.86)">
           <rect x="98" y="199" width="272" height="114" rx="8"/><text x="234" y="263" text-anchor="middle">Autenticidade</text>
           <rect x="400" y="199" width="272" height="114" rx="8"/><text x="536" y="263" text-anchor="middle">Influência</text>
           <rect x="702" y="199" width="272" height="114" rx="8"/><text x="838" y="263" text-anchor="middle">Conexão</text>
@@ -331,6 +338,17 @@
           <img src="assets/images/mobile-partners/partner-02.jpg" alt="">
           <img src="assets/images/mobile-partners/partner-03.jpg" alt="">
           <img src="assets/images/mobile-partners/partner-04.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-05.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-06.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-07.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-08.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-10.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-11.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-12.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-13.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-14.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-15.jpg" alt="">
+          <img src="assets/images/mobile-partners/partner-16.jpg" alt="">
         </div>
         <p class="mobile-note mobile-brand-list">Phillip Plein, Rolex, Hidratei, YSL Beauty, &Eacute;poca Cosm&eacute;ticos, Pantene, La Roche Posay, L'Occitane Brasil, Dove, K&eacute;rastase, Redken e outras.</p>
       </section>
@@ -342,13 +360,13 @@
           <img src="assets/images/content-1.png" alt="Conte&uacute;do de beleza">
           <img src="assets/images/content-2.png" alt="Conte&uacute;do de moda">
           <img src="assets/images/content-3.png" alt="Conte&uacute;do lifestyle">
-          <img src="assets/images/mobile-partners/partner-09.jpg" alt="Helena com produto Dove">
+          <img src="assets/images/mobile-content-instagram.jpg" alt="Post do Instagram da Helena">
           <img src="assets/images/content-1.png" alt="">
           <img src="assets/images/content-2.png" alt="">
           <img src="assets/images/content-3.png" alt="">
-          <img src="assets/images/mobile-partners/partner-09.jpg" alt="">
+          <img src="assets/images/mobile-content-instagram.jpg" alt="">
         </div>
-        <p class="mobile-note mobile-note-spaced">Beleza, moda, desenvolvimento pessoal, vlogs e lifestyle.</p>
+        <p class="mobile-note mobile-note-spaced mobile-note-lined">Beleza, moda, desenvolvimento pessoal, vlogs e lifestyle.</p>
       </section>
 
       <section class="mobile-section mobile-light" id="mobile-conexao">
@@ -356,9 +374,9 @@
         <h2>Conte&uacute;do que gera conex&atilde;o.</h2>
         <p>Campanhas com resultados reais de visualiza&ccedil;&otilde;es, engajamento e convers&otilde;es.</p>
         <div class="mobile-card-grid">
-          <article><img src="assets/images/service-1.jpg" alt="Publicidade beauty"><h3>Publicidades</h3><p>Conte&uacute;dos aut&ecirc;nticos com conex&atilde;o com a audi&ecirc;ncia.</p></article>
+          <article><img src="assets/images/service-publicidades.jpg" alt="Publicidade beauty"><h3>Publicidades</h3><p>Conte&uacute;dos aut&ecirc;nticos com conex&atilde;o com a audi&ecirc;ncia.</p></article>
           <article><img src="assets/images/service-2.jpg" alt="Campanha beauty"><h3>Campanhas</h3><p>Autoridade, criativos e posicionamento para sua marca.</p></article>
-          <article><img src="assets/images/service-3.png" alt="Conte&uacute;do UGC"><h3>Conte&uacute;do UGC</h3><p>Comunica&ccedil;&atilde;o e convers&atilde;o em resultados reais.</p></article>
+          <article><img src="assets/images/service-1.jpg" alt="Conte&uacute;do UGC"><h3>Conte&uacute;do UGC</h3><p>Comunica&ccedil;&atilde;o e convers&atilde;o em resultados reais.</p></article>
         </div>
         <a class="mobile-video-button" href="#portfolio-videos">Acesse meu portf&oacute;lio de v&iacute;deos</a>
       </section>
@@ -450,7 +468,7 @@
       </div>
     </section>
   </main>
-  <script src="script.js?v=desktop-sync-2"></script>
+  <script src="script.js?v=note-lines-1"></script>
 </body>
 </html>
 

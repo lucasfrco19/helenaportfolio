@@ -32,7 +32,7 @@ body {
 }
 
 .mobile-site {
-  display: none;
+  display: block;
 }
 
 svg a,
@@ -136,13 +136,6 @@ svg [id]:hover {
   outline: 1px solid rgba(255, 255, 255, 0.01);
 }
 
-@media (min-width: 761px) {
-  #galeria {
-    display: none;
-  }
-}
-
-@media (max-width: 760px) {
   .page {
     display: none;
   }
@@ -151,7 +144,7 @@ svg [id]:hover {
     display: block;
     color: #3e2b22;
     background: #ead5ad;
-    font-family: "Inter", Arial, sans-serif;
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
     line-height: 1.5;
   }
 
@@ -159,15 +152,16 @@ svg [id]:hover {
   .mobile-site h2,
   .mobile-site h3 {
     margin: 0;
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-weight: 600;
+    font-family: "Outfit", "DM Sans", Arial, sans-serif;
+    font-weight: 500;
     letter-spacing: 0;
-    line-height: 0.98;
+    line-height: 1;
   }
 
   .mobile-site h1 {
     color: #f4eee7;
     font-size: clamp(3.4rem, 17vw, 5.2rem);
+    font-weight: 400;
     text-transform: uppercase;
   }
 
@@ -181,6 +175,7 @@ svg [id]:hover {
 
   .mobile-site p {
     margin: 0;
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
     font-size: 1rem;
   }
 
@@ -226,6 +221,7 @@ svg [id]:hover {
   .mobile-kicker,
   .mobile-eyebrow {
     color: #aa9987;
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
     font-size: 0.74rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -243,7 +239,10 @@ svg [id]:hover {
     max-width: 31rem;
     margin: 0 auto;
     color: rgba(244, 238, 231, 0.9);
-    font-size: 1.08rem;
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
+    font-size: 0.98rem;
+    font-weight: 300;
+    line-height: 1.45;
   }
 
   .mobile-actions {
@@ -322,6 +321,20 @@ svg [id]:hover {
     font-size: 1rem;
   }
 
+  #mobile-numeros,
+  #mobile-numeros h2,
+  #mobile-numeros .mobile-eyebrow,
+  #mobile-numeros .mobile-note {
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
+  }
+
+  #mobile-numeros h2 {
+    font-family: "Outfit", "DM Sans", Arial, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1;
+  }
+
   .mobile-dark > p:not(.mobile-eyebrow):not(.mobile-note) {
     color: rgba(244, 238, 231, 0.82);
   }
@@ -355,6 +368,7 @@ svg [id]:hover {
 
   .mobile-list li {
     color: #33271f;
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
     font-size: 0.98rem;
     font-weight: 600;
   }
@@ -371,12 +385,14 @@ svg [id]:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 8px;
     padding: 18px 12px;
     border-radius: 16px;
     background: #ecd5ab;
     color: #aa9987;
     text-align: center;
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
   }
 
   .mobile-stats article:last-child {
@@ -385,15 +401,19 @@ svg [id]:hover {
 
   .mobile-stats strong {
     color: #c9a052;
-    font-family: "Cormorant Garamond", Georgia, serif;
+    font-family: "Outfit", "DM Sans", Arial, sans-serif;
     font-size: 2.75rem;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 0.92;
   }
 
   .mobile-stats span {
+    display: block;
+    width: 100%;
     font-size: 0.92rem;
+    font-weight: 400;
     line-height: 1.25;
+    text-align: center;
   }
 
   .mobile-wide-img {
@@ -406,7 +426,10 @@ svg [id]:hover {
 
   .mobile-site .mobile-note {
     margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
     color: rgba(62, 43, 34, 0.68);
+    font-family: "DM Sans", "Inter", Arial, sans-serif;
     font-size: 0.94rem;
     text-align: center;
   }
@@ -415,13 +438,21 @@ svg [id]:hover {
     margin-top: 34px;
   }
 
-  .mobile-site .mobile-brand-list {
+  .mobile-site .mobile-brand-list,
+  .mobile-site .mobile-note-lined {
     margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 18px 16px;
     border-top: 1px solid rgba(133, 99, 72, 0.22);
     border-bottom: 1px solid rgba(133, 99, 72, 0.22);
     color: rgba(62, 43, 34, 0.72);
     line-height: 1.55;
+    text-align: center;
+  }
+
+  .mobile-site .mobile-note-lined {
+    margin-top: 34px;
   }
 
   .mobile-partner-carousel {
@@ -543,15 +574,15 @@ svg [id]:hover {
   }
 
   .mobile-service-grid span {
-    min-height: 74px;
+    min-height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
-    border-radius: 10px;
+    padding: 12px 14px;
+    border-radius: 8px;
     background: #5f422f;
     color: #f4eee7;
-    font-size: 0.98rem;
+    font-size: 0.9rem;
     text-align: center;
   }
 
@@ -560,16 +591,17 @@ svg [id]:hover {
   }
 
   .mobile-pill-grid span {
-    min-height: 72px;
+    min-height: 52px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
-    border-radius: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
     background: #f2eee8;
     color: #3e2b22;
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 1.35rem;
+    font-family: "Outfit", "DM Sans", Arial, sans-serif;
+    font-size: 1.12rem;
+    font-weight: 400;
     text-align: center;
   }
 
@@ -581,6 +613,184 @@ svg [id]:hover {
     background: #efe4d4;
     color: #856348;
   }
+
+@media (min-width: 761px) {
+  .mobile-site {
+    font-size: 1.02rem;
+  }
+
+  .mobile-hero,
+  .mobile-contact {
+    min-height: 100vh;
+    padding: 98px clamp(48px, 8vw, 120px);
+  }
+
+  .mobile-hero h1 {
+    font-size: clamp(5.8rem, 8.6vw, 8.8rem);
+  }
+
+  .mobile-hero .mobile-kicker {
+    font-size: 1.24rem;
+  }
+
+  .mobile-hero > p:not(.mobile-kicker) {
+    max-width: 46rem;
+    font-size: 1.02rem;
+  }
+
+  .mobile-actions {
+    grid-template-columns: repeat(2, minmax(190px, 230px));
+    justify-content: center;
+    width: auto;
+    max-width: none;
+  }
+
+  .mobile-contact .mobile-actions {
+    grid-template-columns: repeat(4, minmax(135px, 160px));
+  }
+
+  .mobile-section {
+    padding: 92px clamp(48px, 7vw, 108px);
+  }
+
+  .mobile-section > * {
+    max-width: 1180px;
+  }
+
+  .mobile-section h2 {
+    max-width: 980px;
+    font-size: clamp(3.4rem, 5.2vw, 5.4rem);
+  }
+
+  .mobile-section > p:not(.mobile-eyebrow):not(.mobile-note) {
+    max-width: 680px;
+    margin-left: 0;
+    font-size: 1.08rem;
+  }
+
+  .mobile-about {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(420px, 1fr);
+    align-items: center;
+    column-gap: clamp(48px, 7vw, 96px);
+  }
+
+  .mobile-about > img {
+    grid-row: 1 / span 7;
+    max-width: 520px;
+    margin: 0;
+  }
+
+  .mobile-list {
+    margin-left: 0;
+  }
+
+  .mobile-stats {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .mobile-stats article {
+    min-height: 160px;
+    padding: 22px 16px;
+  }
+
+  .mobile-stats article:last-child {
+    grid-column: auto;
+  }
+
+  .mobile-stats strong {
+    font-size: clamp(3rem, 4.4vw, 4.6rem);
+  }
+
+  .mobile-stats span {
+    font-size: 1rem;
+  }
+
+  .mobile-site .mobile-note {
+    max-width: 720px;
+    font-size: 1rem;
+  }
+
+  .mobile-partner-carousel,
+  .mobile-phone-grid {
+    width: calc(100% + clamp(48px, 7vw, 108px));
+    max-width: none;
+    margin-left: 0;
+    margin-right: calc(clamp(48px, 7vw, 108px) * -1);
+    padding-left: 0;
+    padding-right: clamp(48px, 7vw, 108px);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  .mobile-partner-carousel img,
+  .mobile-phone-grid img {
+    flex-basis: clamp(230px, 20vw, 300px);
+    width: clamp(230px, 20vw, 300px);
+  }
+
+  .mobile-partner-carousel img {
+    animation: desktopPartnerCarousel 64s linear infinite;
+  }
+
+  .mobile-phone-grid img {
+    animation: desktopPhoneCarousel 24s linear infinite;
+  }
+
+  .mobile-partner-carousel::-webkit-scrollbar,
+  .mobile-phone-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes desktopPartnerCarousel {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(-15 * (clamp(230px, 20vw, 300px) + 14px)));
+    }
+  }
+
+  @keyframes desktopPhoneCarousel {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(calc(-4 * (clamp(230px, 20vw, 300px) + 18px)));
+    }
+  }
+
+  .mobile-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .mobile-card-grid article {
+    padding: 14px 14px 28px;
+  }
+
+  .mobile-service-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .mobile-service-grid span {
+    min-height: 64px;
+  }
+
+  .mobile-pill-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .mobile-pill-grid span {
+    min-height: 68px;
+    font-size: 1.28rem;
+  }
 }
 
 .video-portfolio {
@@ -589,7 +799,7 @@ svg [id]:hover {
   padding: clamp(70px, 8vw, 110px) clamp(18px, 5vw, 64px) clamp(82px, 9vw, 120px);
   background: #856348;
   color: #f4eee7;
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "DM Sans", "Inter", Arial, sans-serif;
 }
 
 .video-portfolio__background {
@@ -742,10 +952,10 @@ svg [id]:hover {
 .iphone-card h3 {
   margin: 34px 0 4px;
   color: #f4eee7;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.28rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-family: "Outfit", "DM Sans", Arial, sans-serif;
+  font-size: 1.14rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   line-height: 1.05;
   text-transform: uppercase;
 }
@@ -753,7 +963,7 @@ svg [id]:hover {
 .iphone-card p {
   margin: 0;
   color: rgba(244, 238, 231, 0.88);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "DM Sans", "Inter", Arial, sans-serif;
   font-size: 0.86rem;
   font-weight: 500;
   letter-spacing: 0.01em;
